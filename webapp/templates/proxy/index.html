@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+    home
+{% endblock %}
+
+{% block content %}
+<ul>
+    {% for proxy in proxies %}
+        <li>{{ proxy }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
